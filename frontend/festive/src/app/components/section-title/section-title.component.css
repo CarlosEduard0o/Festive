@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.section-title{
+    margin-top: 1%; 
+    margin-bottom: 3%;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 3%;
+    background-color: #D95D33;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}

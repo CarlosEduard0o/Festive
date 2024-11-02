@@ -22,6 +22,7 @@ import { EventCardComponent } from "../../components/event-card/event-card.compo
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../components/footer/footer.component";
 import { NewsLetterComponent } from "../../components/news-letter/news-letter.component";
+import { SectionTitleComponent } from "../../components/section-title/section-title.component";
 
 @Component({
   selector: 'app-main',
@@ -45,7 +46,8 @@ import { NewsLetterComponent } from "../../components/news-letter/news-letter.co
     EventCarouselComponent,
     EventCardComponent,
     FooterComponent,
-    NewsLetterComponent
+    NewsLetterComponent,
+    SectionTitleComponent
 ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
@@ -53,10 +55,33 @@ import { NewsLetterComponent } from "../../components/news-letter/news-letter.co
 export class MainComponent {
   faCoffee = fontawesome.faHeartBroken;
   
-  items = [
-    { title: 'Evento 1', description: 'Descrição do Evento 1' },
-    { title: 'Evento 2', description: 'Descrição do Evento 2' },
-    { title: 'Evento 3', description: 'Descrição do Evento 3' },
+  sections = [
+    {
+      sectionTitle: 'Seção 1',
+      events: [
+        { title: 'Evento 1', description: 'Descrição do Evento 1' },
+        { title: 'Evento 2', description: 'Descrição do Evento 2' },
+      ]
+    },
+    {
+      sectionTitle: 'Seção 2',
+      events: [
+        { title: 'Evento 3', description: 'Descrição do Evento 3' },
+        { title: 'Evento 4', description: 'Descrição do Evento 4' },
+      ]
+    },
+    {
+      sectionTitle: 'Seção 3',
+      events: [
+        { title: 'Evento 5', description: 'Descrição do Evento 5' },
+        { title: 'Evento 6', description: 'Descrição do Evento 6' },
+        { title: 'Evento 7', description: 'Descrição do Evento 7' },
+        { title: 'Evento 8', description: 'Descrição do Evento 8' },
+        { title: 'Evento 9', description: 'Descrição do Evento 9' },
+        { title: 'Evento 10', description: 'Descrição do Evento 10' },
+        { title: 'Evento 11', description: 'Descrição do Evento 11' },
+      ]
+    }
   ];
 
   constructor(private router: Router) {
