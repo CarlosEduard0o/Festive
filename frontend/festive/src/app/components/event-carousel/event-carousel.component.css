@@ -1,0 +1,15 @@
+.carousel-item img {
+    height: 500px; /* Defina a altura desejada */
+    object-fit: cover; /* Mantém a proporção e cobre a área */
+    width: 100%; /* Garante que a imagem preencha a largura */
+  }
+
+.event-title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+}
+
+.event-description{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+}
