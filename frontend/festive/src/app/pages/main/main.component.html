@@ -1,3 +1,15 @@
 <app-nav-bar-component></app-nav-bar-component>
-<app-search-field></app-search-field>
 <app-event-carousel></app-event-carousel>
+<app-search-field></app-search-field>
+
+<h1 class="section-title">Eventos</h1>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+        <app-event-card-component *ngFor="let item of items" [title]="item.title"
+            [description]="item.description"></app-event-card-component>
+    </div>
+</div>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <app-footer></app-footer>
+</footer>

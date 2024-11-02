@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-event-card-component',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './event-card.component.css'
 })
 export class EventCardComponent {
-
+  @Input() title!: string;
+  @Input() description!: string;
 }

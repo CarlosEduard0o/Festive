@@ -1,12 +1,10 @@
-/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
-
-
 #search-div{
-    width: 100%; 
     display: flex; 
+    margin-top: 1%; 
     justify-content: center;
-    margin-top: 10px;
-    text-align: center;
+    background-color: #D95D33;
+    align-items: center;
+    height: 10%;
 }
 
 .example-form {
