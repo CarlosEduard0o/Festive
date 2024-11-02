@@ -1,18 +1,18 @@
-<mat-toolbar id="header-toolbar">
+<mat-toolbar id="header-toolbar" style="display: flex; justify-content: space-between;">
     <span>Festive</span>
-    <button mat-icon-button matTooltip="Meu perfil" [matMenuTriggerFor]="myProfile">
-        <mat-icon>account_circle</mat-icon>
-    </button>
+    <div>
+        <button mat-icon-button matTooltip="Ajuda" routerLink="/help">
+            <mat-icon>help</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Meu perfil" [matMenuTriggerFor]="myProfile">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </div>
     <mat-menu #myProfile [overlapTrigger]="false" yPosition="below">
         <button mat-menu-item routerLink="/account/my-profile">
             <mat-icon>person</mat-icon><span>Minha conta</span>
         </button>
-        <button mat-menu-item routerLink="/help">
-            <mat-icon>settings</mat-icon><span>Ajuda</span>
-        </button>
-
         <mat-divider></mat-divider>
-
         <button mat-menu-item (click)="logout()">
             <mat-icon>exit_to_app</mat-icon>Sair
         </button>

@@ -21,6 +21,7 @@ import { EventCarouselComponent } from "../../components/event-carousel/event-ca
 import { EventCardComponent } from "../../components/event-card/event-card.component";
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../components/footer/footer.component";
+import { NewsLetterComponent } from "../../components/news-letter/news-letter.component";
 
 @Component({
   selector: 'app-main',
@@ -43,7 +44,8 @@ import { FooterComponent } from "../../components/footer/footer.component";
     SearchFieldComponent,
     EventCarouselComponent,
     EventCardComponent,
-    FooterComponent
+    FooterComponent,
+    NewsLetterComponent
 ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
