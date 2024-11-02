@@ -8,6 +8,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 import {Router, RouterModule, RouterOutlet} from '@angular/router';
 
@@ -29,7 +32,7 @@ import * as fontawesome from '@fortawesome/free-solid-svg-icons';
     RouterModule,
     MatExpansionModule,
     MatTooltipModule,
-    FontAwesomeModule,
+    FontAwesomeModule, 
   ],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'

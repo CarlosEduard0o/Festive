@@ -16,6 +16,8 @@ import {Router, RouterModule, RouterOutlet} from '@angular/router';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import * as fontawesome from '@fortawesome/free-solid-svg-icons';
+import { SearchFieldComponent } from "../../components/search-field/search-field.component";
+import { EventCarouselComponent } from "../../components/event-carousel/event-carousel.component";
 
 @Component({
   selector: 'app-main',
@@ -33,8 +35,10 @@ import * as fontawesome from '@fortawesome/free-solid-svg-icons';
     MatExpansionModule,
     MatTooltipModule,
     FontAwesomeModule,
-    NavBarComponent
-  ],
+    NavBarComponent,
+    SearchFieldComponent,
+    EventCarouselComponent
+],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
