@@ -2,17 +2,16 @@
     <h1 id="title">Festive</h1>
     <div>
         <button mat-icon-button matTooltip="Ajuda" routerLink="/help">
-            <mat-icon>help</mat-icon>
+            <mat-icon class="mat-primary large-icon">help</mat-icon>
         </button>
         <button mat-icon-button matTooltip="Meu perfil" [matMenuTriggerFor]="myProfile">
-            <mat-icon>account_circle</mat-icon>
+            <mat-icon class="mat-primary large-icon">account_circle</mat-icon>
         </button>
     </div>
     <mat-menu #myProfile [overlapTrigger]="false" yPosition="below">
         <button mat-menu-item routerLink="/account/my-profile">
             <mat-icon>person</mat-icon><span>Minha conta</span>
         </button>
-        <mat-divider></mat-divider>
         <button mat-menu-item (click)="logout()">
             <mat-icon>exit_to_app</mat-icon>Sair
         </button>

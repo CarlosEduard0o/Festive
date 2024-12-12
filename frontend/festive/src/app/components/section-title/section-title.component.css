@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-.section-title{
 
-    margin-bottom: 3%;
+#section-title{
+    margin-top: 1%;
     display: flex; 
     justify-content: space-between; 
-    padding: 0 3%;
-    color: #FFFDFB;;
+    padding: 0 10%;
+    color: #FFFFFF;;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
-
     font-style: normal;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.b-example-divider {
+    height: 1rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }

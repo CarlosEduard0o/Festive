@@ -1,8 +1,7 @@
-#news-letter-div{
-    display: flex; 
-    margin-top: 1%; 
+#news-letter-div {
+    display: flex;
     justify-content: center;
-    background-color: #D95D33;
+    background-color: #1B263B;
     align-items: center;
     height: 10%;
 }

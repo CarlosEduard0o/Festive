@@ -1,11 +1,10 @@
 <app-nav-bar-component></app-nav-bar-component>
 <app-event-carousel></app-event-carousel>
 <app-search-field></app-search-field>
-
-<div class="container" style="background-color: #2b3035;">
+<div id="div-events">
     <div *ngFor="let section of sections">
         <app-section-title [title]="section.sectionTitle"></app-section-title>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="padding-left: 10%; padding-right: 10%; margin-right: 0px !important;">
             <div class="col" *ngFor="let item of section.events">
                 <app-event-card-component 
                     [title]="item.title" 
@@ -18,6 +17,4 @@
 
 <app-news-letter></app-news-letter>
 
-<footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <app-footer></app-footer>
-</footer>
+<app-footer></app-footer>
