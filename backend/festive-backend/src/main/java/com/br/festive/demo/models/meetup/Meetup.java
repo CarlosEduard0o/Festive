@@ -45,4 +45,25 @@ public class Meetup {
     @JsonProperty("event_stage")
     private MeetupStageEnum stage;
 
+    public Meetup(String title,
+                  String information,
+                  String cep_address,
+                  String state_address,
+                  String city_address,
+                  String neighborhood_address,
+                  String number_address,
+                  String street_address,
+                  ZonedDateTime event_date,
+                  MeetupStageEnum stage) {
+        this.title = title;
+        this.information = information;
+        this.cep_address = cep_address;
+        this.state_address = state_address;
+        this.city_address = city_address;
+        this.neighborhood_address = neighborhood_address;
+        this.number_address = number_address;
+        this.street_address = street_address;
+        this.event_date = event_date;
+        this.stage = stage;
+    }
 }
