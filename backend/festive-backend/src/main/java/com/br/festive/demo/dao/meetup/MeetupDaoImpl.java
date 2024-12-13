@@ -10,6 +10,8 @@ import java.util.List;
 
 public class MeetupDaoImpl implements MeetupDao {
 
+//    Os usuários poderão cadastrar seus eventos e também apagá-los
+//    portanto é necessário vincular esses eventos aos usuários criadores
     private final Connection connection;
 
     public MeetupDaoImpl(Connection connection) {
@@ -69,6 +71,17 @@ public class MeetupDaoImpl implements MeetupDao {
 
     @Override
     public void deleteById(int id) {
+
+        final String sql = "DELETE FROM meetup WHERE id = ? ;";
+
+        try{
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            preparedStatement.execute();
+            preparedStatement.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

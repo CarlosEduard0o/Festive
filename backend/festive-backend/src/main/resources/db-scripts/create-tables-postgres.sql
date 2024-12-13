@@ -22,8 +22,11 @@ CREATE TABLE account_password (
 
 CREATE TABLE meetup (
     id SERIAL PRIMARY KEY,
+
     title VARCHAR(50) NOT NULL,
     information VARCHAR(1024) NOT NULL,
+
+    account_id INTEGER NOT NULL,
 
     cep_address VARCHAR(9),
     state_address VARCHAR(200),
@@ -34,6 +37,7 @@ CREATE TABLE meetup (
 
     event_date TIMESTAMP WITH TIME ZONE NOT NULL,
     stage VARCHAR(200) NOT NULL CHECK (stage IN ('PUBLISHED', 'CANCELED')),
+    FOREIGN KEY(account_id) REFERENCES account(id) ON DELETE CASCADE,
     UNIQUE(title, information, event_date, cep_address)
 );
 
