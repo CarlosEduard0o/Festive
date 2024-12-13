@@ -15,38 +15,42 @@ public class Meetup {
 
     private int id;
 
-    @JsonProperty("event_title")
+    @JsonProperty("meetup_title")
     private String title;
 
-    @JsonProperty("event_information")
+    @JsonProperty("meetup_information")
     private String information;
 
-    @JsonProperty("event_cep_address")
+    @JsonProperty("account_id")
+    private int account_id;
+
+    @JsonProperty("meetup_cep_address")
     private String cep_address;
 
-    @JsonProperty("event_state_address")
+    @JsonProperty("meetup_state_address")
     private String state_address;
 
-    @JsonProperty("event_city_address")
+    @JsonProperty("meetup_city_address")
     private String city_address;
 
-    @JsonProperty("event_neighborhood_address")
+    @JsonProperty("meetup_neighborhood_address")
     private String neighborhood_address;
 
-    @JsonProperty("event_number_address")
+    @JsonProperty("meetup_number_address")
     private String number_address;
 
-    @JsonProperty("event_street_address")
+    @JsonProperty("meetup_street_address")
     private String street_address;
 
-    @JsonProperty("event_date")
+    @JsonProperty("meetup_date")
     private ZonedDateTime event_date;
 
-    @JsonProperty("event_stage")
+    @JsonProperty("meetup_stage")
     private MeetupStageEnum stage;
 
     public Meetup(String title,
                   String information,
+                  int account_id,
                   String cep_address,
                   String state_address,
                   String city_address,
@@ -57,6 +61,7 @@ public class Meetup {
                   MeetupStageEnum stage) {
         this.title = title;
         this.information = information;
+        this.account_id = account_id;
         this.cep_address = cep_address;
         this.state_address = state_address;
         this.city_address = city_address;

@@ -11,6 +11,7 @@ public interface MeetupService {
     int createMeetup(
             final String title,
             final String information,
+            final int account_id,
             final String cep_address,
             final String state_address,
             final String city_address,
@@ -29,6 +30,7 @@ public interface MeetupService {
             final int id,
             final String title,
             final String information,
+            final int account_id,
             final String cep_address,
             final String state_address,
             final String city_address,

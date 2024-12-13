@@ -19,6 +19,7 @@ public class MeetupServiceImpl implements MeetupService {
     @Override
     public int createMeetup(String title,
                             String information,
+                            int account_id,
                             String cep_address,
                             String state_address,
                             String city_address,
@@ -30,6 +31,7 @@ public class MeetupServiceImpl implements MeetupService {
 
         Meetup meetup = new Meetup(title,
                  information,
+                 account_id,
                  cep_address,
                  state_address,
                  city_address,
@@ -56,6 +58,7 @@ public class MeetupServiceImpl implements MeetupService {
     public void updateMeetup(int id,
                              String title,
                              String information,
+                             int account_id,
                              String cep_address,
                              String state_address,
                              String city_address,
@@ -67,6 +70,7 @@ public class MeetupServiceImpl implements MeetupService {
 
         Meetup meetup = new Meetup(title,
                 information,
+                account_id,
                 cep_address,
                 state_address,
                 city_address,
