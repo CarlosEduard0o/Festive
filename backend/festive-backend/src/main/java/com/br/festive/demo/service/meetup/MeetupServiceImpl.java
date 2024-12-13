@@ -2,7 +2,7 @@ package com.br.festive.demo.service.meetup;
 
 import com.br.festive.demo.models.meetup.Meetup;
 import com.br.festive.demo.models.meetup.MeetupStageEnum;
-import com.br.festive.demo.port.dao.event.MeetupDao;
+import com.br.festive.demo.port.dao.meetup.MeetupDao;
 import com.br.festive.demo.port.service.MeetupService;
 
 import java.time.ZonedDateTime;
