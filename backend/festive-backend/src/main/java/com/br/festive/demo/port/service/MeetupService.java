@@ -42,5 +42,6 @@ public interface MeetupService {
 
     void deleteMeetupById(final int id);
 
-    void deleteAllMeetups();
+    void deleteAllAccountMeetups(final int id);
+
 }

@@ -89,7 +89,7 @@ public class MeetupServiceImpl implements MeetupService {
     }
 
     @Override
-    public void deleteAllMeetups() {
-        meetupDao.deleteAllMeetups();
+    public void deleteAllAccountMeetups(int id) {
+        meetupDao.deleteAllAccountMeetups(id);
     }
 }
