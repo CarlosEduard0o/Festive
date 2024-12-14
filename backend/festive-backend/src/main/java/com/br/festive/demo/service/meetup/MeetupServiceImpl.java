@@ -3,11 +3,14 @@ package com.br.festive.demo.service.meetup;
 import com.br.festive.demo.models.meetup.Meetup;
 import com.br.festive.demo.models.meetup.MeetupStageEnum;
 import com.br.festive.demo.port.dao.meetup.MeetupDao;
-import com.br.festive.demo.port.service.MeetupService;
+import com.br.festive.demo.port.service.meetup.MeetupService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.time.ZonedDateTime;
 import java.util.List;
-
+@Service
+@Slf4j
 public class MeetupServiceImpl implements MeetupService {
 
     private final MeetupDao meetupDao;

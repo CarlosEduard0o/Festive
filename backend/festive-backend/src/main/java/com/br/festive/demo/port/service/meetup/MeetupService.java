@@ -1,4 +1,4 @@
-package com.br.festive.demo.port.service;
+package com.br.festive.demo.port.service.meetup;
 
 import com.br.festive.demo.models.meetup.Meetup;
 import com.br.festive.demo.models.meetup.MeetupStageEnum;
