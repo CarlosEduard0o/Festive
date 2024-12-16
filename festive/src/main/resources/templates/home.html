@@ -15,7 +15,11 @@
 <body>
 
     <nav th:replace="~{fragments/navbar :: navbar}"></nav>
-    <div th:replace="~{fragments/carousel :: carousel}"></div>
+
+    <div class="container">
+        <div th:replace="~{fragments/carousel :: carousel}"></div>
+    </div>
+
     <div th:replace="~{fragments/main-title :: main-title}"></div>
 
     <div class="container d-flex justify-content-center">
