@@ -16,8 +16,10 @@
 
     <nav th:replace="~{fragments/navbar :: navbar}"></nav>
 
-    <div class="container">
-        <div th:replace="~{fragments/carousel :: carousel}"></div>
+    <div class="container m-4">
+        <div class="container">
+            <div th:replace="~{fragments/carousel :: carousel}"></div>
+        </div>
     </div>
 
     <div th:replace="~{fragments/main-title :: main-title}"></div>
