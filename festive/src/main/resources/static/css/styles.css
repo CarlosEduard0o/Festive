@@ -28,3 +28,7 @@ hr.solid {
 #main-title-id{
     margin: 40px 0;
 }
+
+.pointer {
+    cursor: pointer;
+}

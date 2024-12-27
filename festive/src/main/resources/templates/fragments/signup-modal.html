@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="modal fade" th:fragment="signup" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Cadastrar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupInputName" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="signupInputName" aria-describedby="nameHelp">
+                            <div id="nameHelp" class="form-text">Fill it with your full name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupInputConfirmPassword" class="form-label">Confirm your password</label>
+                            <input type="password" class="form-control" id="signupInputConfirmPassword">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
