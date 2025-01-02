@@ -76,3 +76,22 @@ hr.solid {
 .search-form .btn-icon i {
     font-size: 1.2rem;
 }
+
+.blurred-background {
+    position: relative;
+    filter: blur(0.5rem);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-image {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70vh;
+    object-fit: cover
+    z-index: 1;
+}

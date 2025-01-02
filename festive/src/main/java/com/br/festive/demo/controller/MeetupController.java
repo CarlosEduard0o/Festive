@@ -18,10 +18,15 @@ public class MeetupController {
     @Autowired
     private MeetupService meetupService;
 
-    @GetMapping("/{id}")
-    public String getMeetupById(@PathVariable final int id, Model model){
-        Meetup meetup = meetupService.getMeetupById(id);
-        model.addAttribute("meetup", meetup);
+//    @GetMapping("/{id}")
+    @GetMapping("/1")
+//    public String getMeetupById(@PathVariable int id, Model model){
+    public String getMeetupById(Model model){
+//        Meetup meetup = meetupService.getMeetupById(1);
+//        model.addAttribute("meetupImageUrl", meetup.getMeetupImageUrl());
+//        model.addAttribute("meetupName", meetup.getTitle());
+//        model.addAttribute("meetupImageUrl", "/images/festival-1.jpg");
+        model.addAttribute("meetupName", "Rock in Rio");
         return "event-page";
     }
 }

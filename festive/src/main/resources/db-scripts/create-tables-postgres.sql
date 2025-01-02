@@ -34,7 +34,7 @@
 --    neighborhood_address VARCHAR(200),
 --    number_address VARCHAR(200),
 --    street_address VARCHAR(200),
---
+--    meetup_image_url VARCHAR(200),
 --    event_date TIMESTAMP WITH TIME ZONE NOT NULL,
 --    stage VARCHAR(200) NOT NULL CHECK (stage IN ('PUBLISHED', 'CANCELED')),
 --    FOREIGN KEY(account_id) REFERENCES account(id) ON DELETE CASCADE,

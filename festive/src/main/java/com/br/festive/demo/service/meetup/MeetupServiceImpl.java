@@ -29,6 +29,7 @@ public class MeetupServiceImpl implements MeetupService {
                             String neighborhood_address,
                             String number_address,
                             String street_address,
+                            String meetupImageUrl,
                             ZonedDateTime event_date,
                             MeetupStageEnum stage) {
 
@@ -41,6 +42,7 @@ public class MeetupServiceImpl implements MeetupService {
                  neighborhood_address,
                  number_address,
                  street_address,
+                 meetupImageUrl,
                  event_date,
                  stage);
 
@@ -68,6 +70,7 @@ public class MeetupServiceImpl implements MeetupService {
                              String neighborhood_address,
                              String number_address,
                              String street_address,
+                             String meetupImageUrl,
                              ZonedDateTime event_date,
                              MeetupStageEnum stage) {
 
@@ -80,6 +83,7 @@ public class MeetupServiceImpl implements MeetupService {
                 neighborhood_address,
                 number_address,
                 street_address,
+                meetupImageUrl,
                 event_date,
                 stage);
 

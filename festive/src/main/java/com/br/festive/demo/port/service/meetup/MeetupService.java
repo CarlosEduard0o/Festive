@@ -18,6 +18,7 @@ public interface MeetupService {
             final String neighborhood_address,
             final String number_address,
             final String street_address,
+            final String meetupImageUrl,
             final ZonedDateTime event_date,
             final MeetupStageEnum stage
     );
@@ -37,6 +38,7 @@ public interface MeetupService {
             final String neighborhood_address,
             final String number_address,
             final String street_address,
+            final String meetupImageUrl,
             final ZonedDateTime event_date,
             final MeetupStageEnum stage);
 

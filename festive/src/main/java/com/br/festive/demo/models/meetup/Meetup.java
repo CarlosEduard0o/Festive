@@ -43,6 +43,9 @@ public class Meetup {
     @JsonProperty("meetup_street_address")
     private String street_address;
 
+    @JsonProperty("meetup_image_url")
+    private String meetupImageUrl;
+
     @JsonProperty("meetup_date")
     private ZonedDateTime event_date;
 
@@ -58,6 +61,7 @@ public class Meetup {
                   String neighborhood_address,
                   String number_address,
                   String street_address,
+                  String meetupImageUrl,
                   ZonedDateTime event_date,
                   MeetupStageEnum stage) {
         this.title = title;
@@ -69,6 +73,7 @@ public class Meetup {
         this.neighborhood_address = neighborhood_address;
         this.number_address = number_address;
         this.street_address = street_address;
+        this.meetupImageUrl = meetupImageUrl;
         this.event_date = event_date;
         this.stage = stage;
     }
@@ -167,5 +172,13 @@ public class Meetup {
 
     public void setStage(MeetupStageEnum stage) {
         this.stage = stage;
+    }
+
+    public String getMeetupImageUrl() {
+        return meetupImageUrl;
+    }
+
+    public void setMeetupImageUrl(String meetupImageUrl) {
+        this.meetupImageUrl = meetupImageUrl;
     }
 }

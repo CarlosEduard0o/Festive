@@ -122,6 +122,7 @@ public class MeetupDaoImpl implements MeetupDao {
                         resultSet.getString("meetup_neighborhood_address"),
                         resultSet.getString("meetup_number_address"),
                         resultSet.getString("meetup_street_address"),
+                        resultSet.getString("meetup_image_url"),
                         resultSet.getTimestamp("meetup_date").toInstant().atZone(ZoneId.systemDefault()),
                         MeetupStageEnum.fromString(resultSet.getString("meetup_stage"))
                 );
@@ -153,6 +154,7 @@ public class MeetupDaoImpl implements MeetupDao {
                         resultSet.getString("meetup_neighborhood_address"),
                         resultSet.getString("meetup_number_address"),
                         resultSet.getString("meetup_street_address"),
+                        resultSet.getString("meetup_image_url"),
                         resultSet.getTimestamp("meetup_date").toInstant().atZone(ZoneId.systemDefault()),
                         MeetupStageEnum.fromString(resultSet.getString("meetup_stage"))
                 );
@@ -174,7 +176,7 @@ public class MeetupDaoImpl implements MeetupDao {
     @Override
     public void update(int id, Meetup entity) {
         String sql = "UPDATE meetup SET title = ?, information = ?, cep_address = ?, state_address = ?, city_address = ?, ";
-        sql += "neighborhood_address = ?, number_address = ?, street_address = ?, event_date = ?, stage = ? ";
+        sql += "neighborhood_address = ?, number_address = ?, street_address = ?, meetup_image_url = ?, event_date = ?, stage = ? ";
         sql += "WHERE id = ? ;";
 
         try{
@@ -188,6 +190,7 @@ public class MeetupDaoImpl implements MeetupDao {
             preparedStatement.setString(6, entity.getNeighborhood_address());
             preparedStatement.setString(7, entity.getNumber_address());
             preparedStatement.setString(8, entity.getStreet_address());
+            preparedStatement.setString(8, entity.getMeetupImageUrl());
             preparedStatement.setTimestamp(9, Timestamp.from(entity.getEvent_date().toInstant()));
             preparedStatement.setString(10, entity.getStage().toString().toLowerCase());
             preparedStatement.setInt(11, id);
