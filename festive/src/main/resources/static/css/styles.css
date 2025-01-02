@@ -87,11 +87,12 @@ hr.solid {
 
 .main-image {
     position: absolute;
-    top: 44%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 60%;
     height: 70vh;
     object-fit: cover
     z-index: 1;
+    border-radius: 25px;
 }
